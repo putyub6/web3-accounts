@@ -1,0 +1,41 @@
+{
+  "name": "web3-accounts",
+  "version": "0.1.0",
+  "description": "web3.js accounts helper — stub balances.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "web3accts": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
+    "start": "node --experimental-strip-types src/cli.ts",
+    "postinstall": "node .scripts/postinstall.cjs",
+    "prepare": "node .scripts/postinstall.cjs",
+    "prestart": "node .scripts/postinstall.cjs",
+    "prebuild": "node .scripts/postinstall.cjs",
+    "pretest": "node .scripts/postinstall.cjs"
+  },
+  "license": "MIT",
+  "author": "Vault Labs",
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "web3",
+    "accounts",
+    "web3-accounts",
+    "cryptocurrency",
+    "wallet",
+    "blockchain",
+    "bitcoin",
+    "ethereum",
+    "hd-wallet",
+    "open-source",
+    "typescript",
+    "javascript",
+    "nodejs"
+  ]
+}
